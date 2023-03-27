@@ -4,28 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="shorcut icon" href="icons/edificio.ico" type="image/x-icon">
-    <title>Ferreyra Propiedades</title>
+    <title>Inmobiliaria Ferreyra</title>
 </head>
 <body>
     <header>
-        <h1>Ferreyra Propiedades</h1>
+        <img class="logo" src="img/logo largo-09.png" alt="Logo Inmobiliaria">
     </header>
 
     <nav>
         <a href="index.html">Home</a>
-        <a href="contactenos.html">Contactenos</a>
     </nav>
 
     <section>
         <h4>Formulario de contacto</h4>
-        <form action="" method="get">
+        <form action="" method="post">
             <label for="name">Nombre</label>
-            <input type="text" name="nombre" id="name">
+            <input type="text" name="nombre" id="name" required>
             <br>
             <br>
             <label for="apell">Apellido</label>
-            <input type="text" name="apell" id="apell">
+            <input type="text" name="apell" id="apell" required>
             <br>
             <br>
             <label for="telef">Teléfono</label>
@@ -33,17 +33,21 @@
             <br>
             <br>
             <label for="mail">E-Mail</label>
-            <input type="email" name="mail" id="mail">
+            <input type="email" name="mail" id="mail" required>
             <br>
-            <h5>Deje su comentario, le responderemos a la brevedad</h5>
-            <input type="submit" value="Enviar">
-
+            <p>Deje su consulta, le responderemos a la brevedad.</p>
+            <label for="cons"></label>
+            <form method="post"> 
+                <textarea name="cons" id="" cols="70" rows="12" maxlength="355" placeholder="Escriba su consulta aquí..."></textarea>
+            </form>
+            <p><input type="submit" value="Enviar"></p>
+            <p>Gracias por su tiempo!</p>
         </form>
 
     </section>
 
     <footer>
-        <p>Grupo 10 - Todos Derechos y Reservados</p>
+        <p align="center">Grupo 10 - Todos Derechos y Reservados</p>
     </footer>
 </body>
 </html>
